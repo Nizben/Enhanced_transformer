@@ -1,0 +1,8 @@
+torch
+torchvision
+pykeops
+flash-attention
+open3d
+scikit-learn
+tqdm
+numpy
