@@ -1,7 +1,5 @@
-# benchmarking.py
-
 import torch
-from models.custom_cuda_neighborhood import enhanced_neighborhood_aggregation  # Adjust the import path as needed
+from models.custom_cuda_neighborhood import enhanced_neighborhood_aggregation
 
 def benchmark_pytorch(points, neighbors, num_iterations=100, warmup=10):
     """

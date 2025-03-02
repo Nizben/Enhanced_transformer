@@ -1,5 +1,3 @@
-# evaluate_geometric_transformer.py
-
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
