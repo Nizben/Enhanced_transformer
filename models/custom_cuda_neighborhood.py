@@ -2,7 +2,7 @@ import torch
 #import cuda.neighborhood_aggregation  # Import the compiled CUDA extension
 import neighborhood_aggregation
 
-def enhanced_neighborhood_aggregate(points, neighbors):
+def enhanced_neighborhood_aggregation(points, neighbors):
     """
     Wraps the custom CUDA kernel for neighborhood aggregation.
     Args:

@@ -10,3 +10,27 @@ This project implements a high-performance 3D point cloud processing pipeline us
 I am basically playing around with **KeOps**, **Flash Attention**, and a **customized CUDA kernel** that does neighborhood aggregation. The idea is for me to learn how to manipulate these things, combine them if needed, benchmark their performance, and try to experiment with this unconventional transformer.
 
 > Note : Each block of this transformer architecture (the 3 blocks above) is highly optimized, but their combination and the architecture as a whole is not necessarly. This is more of an educational project.
+
+## Setup instructions
+
+**Clone the repository**
+```bash
+git clone https://github.com/nizben/Enhanced_transformer.git
+cd Enhanced_transformer
+```
+**Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**Build the CUDA extension**
+```bash
+cd cuda
+python setup_neighborhood_aggregation.py install
+cd ..
+```
+
+**Run benchmarks**
+```bash
+python benchmarks.py
+```
